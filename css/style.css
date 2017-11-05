@@ -4,6 +4,8 @@
 body{
     /* font-family: 'Open Sans', sans-serif; */
     font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
     
 }
 .home-wrapper{
@@ -49,6 +51,9 @@ body{
 }
 header{
     padding: 10px 0;
+    /* position: fixed; */
+    width: 100%;
+    /* background-color: rgba(0,0,0,0.3) */
 }
 header img{
     /* width: 200px; */
@@ -79,19 +84,27 @@ header nav a:hover{
 }
 #home{
     text-align: center;
-    padding: 200px 0 60px;
+    padding: 100px 0 50px;
+    /* padding: 200px 0 60px; */
     /* padding: 200px 0 155px; */
 }
 #home h1{
     text-transform: uppercase;
     font-size: 67px;
     font-weight: normal;
-    padding: 10px;
-    border-bottom: 4px #fff solid ;
+    padding: 8px;
+    line-height: 1.2;
+    /* border-bottom: 4px #fff solid ; */
 
 }
+
 #home p{
     font-size: 24px;
+}
+#home .divider{
+    width: 70px;
+    border-top: 5px solid #09f;
+    margin:0 auto;
 }
 #home .social{
     margin-top: 70px;
@@ -286,9 +299,10 @@ section h2{
     #home h1{
     text-transform: uppercase;
     font-size: 40px;
-    font-weight: normal;
+    font-weight: normal;order-bottom
+
     padding: 10px;
-    border-bottom: 4px #fff solid ;
+    /* border-bottom: 4px #fff solid ; */
 
 }
     #home p{
