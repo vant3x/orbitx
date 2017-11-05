@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 body{
     /* font-family: 'Open Sans', sans-serif; */
     font-family: 'Roboto', sans-serif;
@@ -46,11 +49,17 @@ header nav a {
     text-decoration: none;
     margin-left: 15px;
     padding:10px 15px;
+    transition: all 0.4s ease;
 }
 header nav a.active{
     /* color:#09f; */
-    background-color: #09f;
+    background-color: rgba(69, 160, 250, 0.434);
     border-radius: 3px;
+    border-bottom:2px solid rgba(69, 160, 250, 0.434);
+    
+}
+header nav a:hover{
+   border-bottom:2px solid rgba(69, 160, 250, 0.434);
 }
 #home{
     text-align: center;
@@ -92,8 +101,49 @@ header nav a.active{
     border:0.5px solid #fff;
     
 }
+#services .box{
+    display: inline-block;
+    text-align: center;
+    width: 33%;
+    padding: 10px;
+}
+#services .box img{
+    width: 120px;
+  
+}
+#portafolio{
+    background: rgb(244, 244, 244);
+}
+#portafolio .box{
+    display: inline-block;
+    text-align: center;
+    width: 31%;
+    margin:1%;
+    padding:0px 5px;
+    background: #fff;
+    box-shadow: rgba(0,0,0,0.1) 2px 0px 12px 1px, rgba(0,0,0,0.12) 2px 0px 12px 1px ;
+}
+
+#portafolio .box img{
+    width: 100%;
+   max-width: 500px;
+}
+#portafolio .box p{
+    color:rgb(82, 82, 82);
+    padding: 10px;
+}
+
 .container {
-    width: 1000px;
+    width: 992px;
     margin-left: auto;
     margin-right: auto;
+}
+
+section {
+    padding: 80px 0;
+}
+section h2{
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 80px;
 }
