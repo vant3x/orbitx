@@ -14,7 +14,18 @@ body{
     color:white;
     
 }
-.home-wrapper .down{
+.down i{
+    background: rgba(0,0,0,0.4);
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    transition:all 0.4s ease;
+    border:1px #fff solid;
+}
+.down i:hover{
+    background: rgba(0,0,0,0.9);
+}
+.home-wrapper  .down, .down i a {
     width: 1000px;
     margin-left: auto;
     margin-right: auto;
@@ -23,9 +34,12 @@ body{
     padding-bottom:50px;
     font-size: 44px;
     font-weight: bold;
-
+   
     cursor: pointer;
  
+}
+.white{
+    color:#fff;
 }
 .home-wrapper .down:active{
     /* color:#09f; */
@@ -53,13 +67,15 @@ header nav a {
 }
 header nav a.active{
     /* color:#09f; */
-    background-color: rgba(69, 160, 250, 0.434);
-    border-radius: 3px;
-    border-bottom:2px solid rgba(69, 160, 250, 0.434);
+    /* background-color: rgba(69, 160, 250, 0.434); */
+    /* border-radius: 3px; */
+    color:#09f;
+    border-bottom:3px solid rgba(69, 160, 250, 0.434);
+    /* border-bottom:3px solid rgba(69, 160, 250, 0.434); */
     
 }
 header nav a:hover{
-   border-bottom:2px solid rgba(69, 160, 250, 0.434);
+   border-bottom:3px solid rgba(69, 160, 250, 0.434);
 }
 #home{
     text-align: center;
@@ -99,6 +115,7 @@ header nav a:hover{
 #home .social a:hover{
     background-color: rgba(0,0,0,0.8);
     border:0.5px solid #fff;
+ 
     
 }
 #services .box{
@@ -132,7 +149,56 @@ header nav a:hover{
     color:rgb(82, 82, 82);
     padding: 10px;
 }
-
+#video{
+    background: rgb(2, 10, 21);
+    text-align: center;
+    padding: 30px 0px;
+}
+#contacto{
+    background: rgb(2, 10, 21);
+    /* background-image: url('../img/lapt_b.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 500px; */
+    text-align: center;
+}
+#contacto h2{
+    color:#fff;
+}
+#contacto input{
+    padding: 10px;
+    width: 400px;
+    border:1px solid #ccc;
+    border-radius: 3px;
+    color:rgb(87, 87, 87);
+}
+#contacto textarea{
+    margin:20px 0;
+    padding: 20px;
+    width: 400px;
+    max-width: 450px;
+    height: 150px;
+    max-height: 200px;
+    color:rgb(87, 87, 87);
+}
+#contacto button{
+    background:#09f;
+    line-height: 1;
+    border:none;
+    color:#fff;
+    border-radius: 3px;
+    font-size: 18px;
+    padding: 12px 23px;
+}
+#contacto button:active{
+    font-weight:bold;
+    
+}
+footer{
+    text-align: center;
+    padding: 60px 0;
+    font-size: 18px;
+}
 .container {
     width: 992px;
     margin-left: auto;
@@ -147,3 +213,95 @@ section h2{
     text-align: center;
     margin-bottom: 80px;
 }
+
+
+
+
+
+
+
+/*  responsive  -------------------- */
+
+
+
+
+
+
+
+
+@media (max-width: 850px) { 
+
+    .home-wrapper{
+        background:  linear-gradient(rgba(0,0, 0, 0.6), rgba(0,0,0,0.6)), url('../img/pexels-photo-160107.jpeg') no-repeat;
+        /* background: linear-gradient(rgba(0,0, 0, 0.5), rgba(0,0,0,0.5)), url('../img/pexels-photo-30222.jpg') no-repeat; */
+        background-position: left;
+        background-size:cover;
+        color:white;
+        
+    }
+
+    header{
+      
+        padding: 5px 0;
+    }
+    header img{
+        /* width: 200px; */
+        float: left;
+    }
+    header nav{
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        display:block;
+        float: left;
+        margin-top:10px;
+    }
+    header nav a {
+        color:#fff;
+        display: block;
+        /* font-weight: bold; */
+        text-decoration: none;
+        margin-left: 15px;
+        padding:10px 15px;
+        transition: all 0.4s ease;
+    }
+    header nav a.active{
+        /* color:#09f; */
+        /* background-color: rgba(69, 160, 250, 0.434); */
+        /* border-radius: 3px; */
+        color:#09f;
+        border-bottom:3px solid rgba(69, 160, 250, 0.434);
+        /* border-bottom:3px solid rgba(69, 160, 250, 0.434); */
+        
+    }
+    header nav a:hover{
+       border-bottom:3px solid rgba(69, 160, 250, 0.434);
+    }
+
+    #home{
+    text-align: center;
+    padding: 150px 0 40px;
+    /* padding: 200px 0 155px; */
+}
+    #home h1{
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: normal;
+    padding: 10px;
+    border-bottom: 4px #fff solid ;
+
+}
+    #home p{
+        font-size: 17px;
+        display: inline-block;
+        width: 700px;
+    }
+    #home .social{
+        margin-top: 70px;
+    }
+    .container {
+        width: 802px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+ }
